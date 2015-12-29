@@ -1,0 +1,30 @@
+/*
+[wip] Visual states
+
+The classes in this file are meant to be used mainly for hiding, expanding and
+displaying contents of sections on a page.
+
+No styleguide reference.
+*/
+
+.is-visible {
+  display: initial;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.expander {
+  max-height: none;
+  position: relative;
+  z-index: 1;
+}
+
+.expander .expandable{
+  display: initial;
+}
+
+.expander .max-height {
+  max-height: none;
+}

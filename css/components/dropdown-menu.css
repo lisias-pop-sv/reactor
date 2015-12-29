@@ -1,0 +1,125 @@
+/*
+Dropdown menu
+
+This is the new architecture of the dropdown menu. It features reusable option
+classes.
+
+Markup:
+<div class="dropdown-menu no-select container color-white {$modifiers}">
+  <label class="dropdown-menu__selected text-label--menu bg-black border-white bg-black">
+    All - one option
+  </label>
+  <i class="dropdown-menu__icon fa fa-caret-down"></i>
+  <ul class="dropdown-menu__list border-white bg-black expandable is-hidden">
+    <li class="list-option">All - one option</li>
+  </ul>
+</div>
+
+.expander - for when the dropdown menu is clicked on.
+
+Styleguide 9.0
+*/
+
+.dropdown-menu__selected {
+  overflow: hidden;
+  padding: 0.4rem 1.4rem 0.4rem 0.25rem;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dropdown-menu__icon {
+  font-size: 22px;
+  font-size: 1.1rem;
+  position: absolute;
+  right: 8px;
+  right: .4rem;
+  top: 3px;
+  top: .15rem;
+}
+
+.dropdown-menu .dropdown-menu__list {
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.dropdown-menu__list .list-option{
+  font-size: 14px;
+  font-size: .7rem;
+  line-height: 1;
+}
+
+.dropdown-menu__list .list-option:hover {
+  background: rgb(56,33,0);
+}
+
+.dropdown-menu.expander .dropdown-menu__selected {
+  cursor: default;
+}
+
+/*
+[wip] Selectable dropdown menu
+
+Markup:
+<div class="dropdown-menu--selectable no-select container bg-black color-white {$modifiers}">
+  <label class="dropdown-menu--selectable__selected text-label--menu border-gold bg-black">
+    All - one option
+  </label>
+  <i class="dropdown-menu--selectable__icon fa fa-caret-down"></i>
+  <ul class="dropdown-menu--selectable__list border-gold bg-black expandable is-hidden clearfix">
+    <li class="left list-option border-dark-grey">1LOW</li>
+    <li class="left list-option border-dark-grey bg-light-gold color-black">2LOW</li>
+    <li class="left list-option border-dark-grey">3LOW</li>
+    <li class="left list-option border-dark-grey list-option--last">4LOW</li>
+  </ul>
+</div>
+
+.expander - for when the menu is clicked on.
+
+Styleguide 9.1
+*/
+
+.dropdown-menu--selectable__selected {
+  overflow: hidden;
+  padding: 0.4rem 1.4rem 0.4rem 0.25rem;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dropdown-menu--selectable__icon {
+  font-size: 22px;
+  font-size: 1.1rem;
+  position: absolute;
+  right: 8px;
+  right: .4rem;
+  top: 3px;
+  top: .15rem;
+  z-index: 2;
+}
+
+.dropdown-menu--selectable .dropdown-menu--selectable__list {
+  border-top: none;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.dropdown-menu--selectable__list .list-option {
+  font-size: 14px;
+  font-size: .7rem;
+  line-height: 1;
+}
+
+.dropdown-menu--selectable.expander .dropdown-menu--selectable__selected {
+  border-bottom: none;
+}
+
+.dropdown-menu--selectable__list .list-option {
+  border-width: 1px 1px 0 0;
+}
+
+.dropdown-menu--selectable__list .list-option--last {
+  border-right: none;
+}

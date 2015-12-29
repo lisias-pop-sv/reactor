@@ -1,0 +1,168 @@
+/*
+Button
+
+The shape and looks of an unstyled button.
+
+Markup:
+<button class="btn">Executed</button>
+<button class="btn">Open</button>
+
+Styleguide 6.0
+*/
+
+.btn {
+  // background: none;
+  // border: 1px solid transparent;
+  cursor: pointer;
+  margin: 0 4px 4px 0;
+  margin: 0 .2rem .2rem 0;
+  padding: 4px 10px 6px;
+  padding: .2rem .5rem .3rem;
+}
+
+/*
+Default button
+
+This is supposed to be one of the building blocks of TruEx, along with its many
+forms.
+
+Markup:
+<button class="btn btn--default">Executed</button>
+<button class="btn btn--default">Open</button>
+
+Styleguide 6.1
+*/
+
+.btn--default {
+  background: rgb(56,33,0);
+  border: 1px solid rgb(140,85,34);
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-size: .75rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.btn--default:hover {
+  background: rgb(0, 0, 0);
+}
+
+/*
+Default button, floated to the right
+
+Markup:
+<button class="btn btn--default right">Executed</button>
+<button class="btn btn--default right">Open</button>
+
+Styleguide 6.2
+*/
+
+.btn.right {
+  margin: 0 0 4px 4px;
+  margin: 0 0 .2rem .2rem;
+}
+
+/*
+Default button, selected
+
+Markup:
+<button class="btn btn--default">aLL</button>
+<button class="btn btn--default btn--selected">ExeCUTEd</button>
+<button class="btn btn--default">Open</button>
+
+Styleguide 6.3
+*/
+
+.btn--selected {
+  background: rgb(0, 0, 0);
+  border-color: rgb(226,135,1);
+  color: rgb(226,135,1);
+  cursor: default;
+}
+
+/*
+[wip] List option button
+
+Experimental: reusable alternative to to the current classes in a dropdown
+menu's list. They can and should be used in any component which uses a dropdown
+menu of any sort.
+The bacgrkound mixin is only for demonstrative purposes
+
+Markup:
+<ul>
+  <li class="list-option bg-black color-white">All</li>
+</ul>
+
+Styleguide 6.4
+*/
+
+.list-option {
+  cursor: pointer;
+  margin: 0;
+  padding: 8px 5px;
+  padding: .4rem .25rem;
+  word-wrap: break-word;
+}
+
+/*
+[wip] Rounded button
+
+Experimental: this button is supposed to look like a circle, the condition being that
+it would have equal height and width.
+
+Markup:
+<button class="btn btn--default border-light-brown bg-dark-brown color-white btn--round">Round button</button>
+
+Styleguide 6.5
+*/
+
+.btn--round {
+  border-radius: 50%;
+}
+
+/*
+"Close" button
+
+This button is supposed to look like a circle, the condition being that
+it would have equal height and width.
+
+Markup:
+<div class="container border-light-gold">
+  <label class="text-label--default color-white">
+    This button needs some context in order for it to showcase its usability.
+  </label>
+  <button class="btn btn--default border-light-brown bg-dark-brown color-white btn--close">x</button>
+</div>
+
+Styleguide 6.6
+*/
+
+.btn--close {
+  border-radius: 50%;
+  font-size: 9px;
+  height: 16px;
+  line-height: 0;
+  padding: 0;
+  position: absolute;
+  right: -8px;
+  text-align: center;
+  top: -4px;
+  vertical-align: middle;
+  width: 16px;
+  z-index: 1;
+}
+
+/*
+
+
+*/
+
+.btn--expand-section {
+  background: rgb(1,41,51);
+  height: 16px;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  width: 16px;
+}

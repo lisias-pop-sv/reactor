@@ -1,0 +1,164 @@
+/*
+Mixins
+
+These classes are general mixins, usable on other projects.
+
+Styleguide 4.0
+*/
+
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: table;
+  line-height: 0;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.border-box {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+
+.center--margin {
+  margin: 0 auto;
+}
+
+.no-select {
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*
+Mixins
+
+These classes are project specific mixins.
+
+Styleguide 4.1
+*/
+
+.disabled {
+  border-color: rgb(109,110,112);
+  color: rgb(109,110,112);
+}
+
+.bg-black {
+  background: rgb(0, 0, 0);
+}
+
+.bg-darker-grey {
+  background: rgb(80,80,80);
+}
+
+.bg-dark-green {
+  background: rgb(11,35,43);
+}
+
+.bg-dark-blue {
+  background: rgb(0,81,102);
+}
+
+.bg-dark-brown {
+  background: rgb(56,33,0);
+}
+
+.bg-light-gold {
+  background: rgb(255,153,0);
+}
+
+.border {
+  border-style: solid;
+  border-width: 1px;
+}
+
+.border-dark-grey {
+  border: 1px solid rgb(145,147,150);
+}
+
+.border-gold {
+  border: 1px solid rgb(226,135,1);
+}
+
+.border-light-gold {
+  border: 1px solid rgb(255,153,0);
+}
+
+.border-light-brown {
+  border: 1px solid rgb(140,85,34);
+}
+
+.border-light-blue {
+  border: 1px solid rgb(51,198,244);
+}
+
+.border-light-green {
+  border: 1px solid rgb(0,81,102);
+}
+
+.border-red {
+  border: 1px solid red;
+}
+
+.border-white {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.color-black {
+  color: rgb(0, 0, 0);
+}
+
+.color-darker-grey {
+  color: rgb(109,111,112);
+}
+
+.color-medium-gold {
+  color: rgb(226,135,1);
+}
+
+.color-light-blue {
+  color: rgb(0, 190, 255);
+}
+
+.color-medium-green {
+  color: rgb(6,129,13);
+}
+
+.color-white {
+  color: rgb(255, 255, 255);
+}
+
+.width-one-quarter {
+  width: 25%;
+}
+
+.width-one-third {
+  width: 33.333%;
+}
+
+.width-one-half {
+  width: 50%;
+}
+
+.width-two-thirds {
+  width: 66.666%
+}
+
+.width-three-quarters {
+  width: 75%;
+}
+
+.width-full {
+  width: 100%;
+}

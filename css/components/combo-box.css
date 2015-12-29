@@ -1,0 +1,69 @@
+/*
+Combo box
+
+Experimental: this combo box is an experiment which is based on the experimental
+dropdown meniu and for the most part will be using the same classes for its
+components.
+
+Markup:
+<div class="combo-box no-select container {$modifiers}">
+  <input class="combo-box__text-field width-full text-field border-box bg-black border-white color-medium-gold">
+  <button class="combo-box__open btn btn--default fa fa-caret-down border-light-brown bg-dark-brown color-white"></button>
+  <ul class="combo-box__list width-full border-box bg-black border-gold color-white expandable is-hidden">
+    <li class="list-option disabled">No matches found</li>
+    <li class="list-option">All</li>
+    <li class="list-option">Single</li>
+  </ul>
+</div>
+
+.expander - when the combo box's text field is in focus
+
+Styleguide 10.0
+*/
+
+.combo-box__text-field {
+  padding: 6px 40px 6px 6px;
+}
+
+.combo-box__open {
+  background: rgb(57,34,0);
+  height: 100%;
+  margin: 0;
+  right: 0;
+  position: absolute;
+  top: 0;
+}
+
+.combo-box__open:hover {
+  background: rgb(111,64,0);
+  border: 1px solid rgb(226,135,1);
+}
+
+.combo-box__list {
+  /*max-height: 122px;*/
+  max-height: 6.1rem;
+  overflow-y: auto;
+  position: absolute;
+}
+
+.combo-box__list .list-option {
+  font-size: 14px;
+  font-size: .7rem;
+  line-height: 1;
+}
+
+.combo-box__list .list-option:hover {
+  background: rgb(56,33,0);
+}
+
+.combo-box__no-result {
+  left: 0;
+  padding: 8px 5px;
+  padding: .4rem .25rem;
+  position: absolute;
+  right: 0;
+}
+
+.combo-box__no-result:hover {
+  background: rgb(0, 0, 0);
+}

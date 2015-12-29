@@ -1,0 +1,129 @@
+/*
+Containers
+
+This is to briefly show how containers can be created and styled.
+
+Styleguide 5.0
+*/
+
+/*
+Default container
+
+Markup:
+<div class="container border-gold">
+  <label class="text-label--default color-white">
+    This is the default container. It has "font-size: 0;", so any text placed
+    directly in it shan't be visible.
+  </label>
+</div>
+
+Styleguide 5.1
+*/
+
+.container {
+  border-collapse: separate;
+  border-spacing: 0px;
+  font-size: 0;
+  line-height: 1;
+  position: relative;
+}
+
+.content-header {
+}
+
+/*
+Default header column(s)
+
+Default columns in a container's header.
+(this is for the general, DIV based version)
+
+Markup:
+<div class="content__col left border-light-green bg-dark-green">
+  column 1: Lorem ipsum dolor sit amet,
+</div>
+<div class="content__col left border-light-green bg-dark-green">
+  column 2: consectetur adipiscing elit.
+</div>
+<div class="content__col left border-light-green bg-dark-green">
+  column 3
+</div>
+<div class="content__col left border-light-green bg-dark-green">
+  This column is
+</div>
+<div class="content__col left border-light-green bg-dark-green">
+  just for testing,
+</div>
+<div class="content__col left border-light-green bg-dark-green">
+  as are all the rest.
+</div>
+
+Styleguide 5.2
+*/
+
+.content__col  {
+  padding: 8px 8px 11px ;
+  padding: .4rem .4rem .55rem ;
+  text-align: center;
+}
+
+/* metoda de evitare a dublarii bordurii intre coloane */
+.content__col + .content__col {
+  border-left: none;
+}
+
+/* varianta pentru TABLE - randul de sus */
+.content__col--top  {
+  border-bottom: none;
+  border-left: none;
+  margin: -1px -1px 0 0;
+  margin: -.05rem -.05rem 0 0;
+  padding: 8px 8px 11px ;
+  padding: .4rem .4rem .55rem ;
+  text-align: center;
+  vertical-align: top;
+}
+
+/* varianta pentru TABLE - randul de jos */
+.content__col--bottom {
+  border-bottom: none;
+  border-left: none;
+  border-top: none;
+  padding: 38px 8px 10px ;
+  padding: 1.9rem .4rem .5rem ;
+}
+
+.content__col--first {
+  border-left: 1px solid rgb(0,81,102);
+}
+
+/*
+Default data container
+
+A border for the container is needed in order for it to "play" nice when being hovered.
+Alternatively, you could set the border's "color" property to "transparent".
+
+Markup:
+<div class="content__data border-light-green">The contents of your content.</div>
+
+Styleguide 5.3
+*/
+
+.content__data {
+  box-sizing: border-box;
+  color: rgb(0, 190, 255);
+
+  margin-top: -1px;
+  margin-top: -.05rem;
+  padding: 14px 0 12px;
+  padding: .7rem 0 .6rem;
+  text-align: center;
+  text-transform: none;
+  width: 100%;
+}
+
+.content__data:hover {
+  border: 2px solid rgb(226,135,1);
+  padding: 13px 0 11px;;
+  padding: .65rem 0 .55rem;;
+  position: relative;
+}
