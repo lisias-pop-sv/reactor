@@ -83,6 +83,10 @@ Styleguide 4.1
   border-width: 1px;
 }
 
+.border-none {
+  border: none;
+}
+
 .border-dark-grey {
   border: 1px solid rgb(145,147,150);
 }
