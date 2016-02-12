@@ -1,0 +1,56 @@
+.container
+  border-collapse: separate
+  border-spacing: 0
+  font-size: 0
+  line-height: 1
+  position: relative
+
+.content-header
+
+.content__col
+  padding: 8px 8px 11px
+  padding: .4rem .4rem .55rem
+  text-align: center
+
+/* metoda de evitare a dublarii bordurii intre coloane */
+.content__col + .content__col
+  border-left: none
+
+/* varianta pentru TABLE - randul de sus */
+.content__col--top
+  border-bottom: none
+  border-left: none
+  margin: -1px -1px 0 0
+  margin: -.05rem -.05rem 0 0
+  padding: 8px 8px 11px
+  padding: .4rem .4rem .55rem
+  text-align: center
+  vertical-align: top
+
+/* varianta pentru TABLE - randul de jos */
+.content__col--bottom
+  border-bottom: none
+  border-left: none
+  border-top: none
+  padding: 38px 8px 10px
+  padding: 1.9rem .4rem .5rem
+
+.content__col--first
+  border-left: 1px solid rgb(0, 81, 102)
+
+.content__data
+  box-sizing: border-box
+  color: rgb(0, 190, 255)
+  margin-top: -1px
+  margin-top: -.05rem
+  padding: 14px 0 12px
+  padding: .7rem 0 .6rem
+  text-align: center
+  text-transform: none
+  width: 100%
+
+.content__data:hover
+  border: 2px solid rgb(226, 135, 1)
+  padding: 13px 0 11px
+  padding: .65rem 0 .55rem
+  position: relative

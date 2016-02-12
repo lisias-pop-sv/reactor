@@ -1,0 +1,9 @@
+build
+docs
+examples
+minified.js
+node_modules
+react-files
+npm-debug.log
+.eslintrc original
+README.md
