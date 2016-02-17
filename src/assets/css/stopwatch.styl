@@ -4,3 +4,42 @@
         overflow-y scroll
         & .stopwatch__lap-list
             overflow hidden
+    & .stopwatch__visual-time
+        background black
+        border 2px solid #ff0020
+        border-radius 50%
+        height 100px
+        perspective 1px
+        position relative
+        width: 100px
+    // & .stopwatch__notch
+    //     border 2px solid white
+    //     counter-increment notch
+    //     left 50%
+    //     position absolute
+    //     transform rotate(calc(counter(notch) * 6deg) translate(50%)
+    //     transform-origin: calc(50% + -1px) calc(100% + 47px) 0
+    & .stopwatch__needle
+        border 1px solid transparent
+        border-radius 50%
+        border-width 0 3px 30px
+        left calc(50% - 3px)
+        position absolute
+        transform-origin: 50% calc(100% + 20px)
+        width 0
+    & .stopwatch__needle--min
+        border-bottom-color white
+        border-bottom-width 50px
+        transform-origin: 50% calc(100%)
+    & .stopwatch__needle--sec
+        border-color red
+        border-width 0 1px 50px
+        left calc(50% - 2px)
+        transform-origin: calc(50% + 1px) calc(100% + 0px) 0
+        &:before
+            border 3px solid red
+            border-radius 50%
+            content ""
+            left 50%
+            position absolute
+            transform translate(-50%, 8px)

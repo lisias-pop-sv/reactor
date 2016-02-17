@@ -15,7 +15,7 @@ import LikeButton from './modules/likeBtn.jsx';
 import MyModule from './modules/my-module.jsx';
 import GrepBox from './modules/grep-box.jsx';
 
-ReactDOM.render(<Stopwatch offsetStartTime={1000 * 3600 * 23.9995}/>, document.getElementById('stopwatch'));
+ReactDOM.render(<Stopwatch offsetStartTime={1000 * (3600 * 0 + 60 * 1 + 5)}/>, document.getElementById('stopwatch'));
 // ReactDOM.render(<Avatar username={'John Doe'}/>, document.getElementById('avatar'));
 ReactDOM.render(<Watcher />, document.getElementById('watcher'));
 ReactDOM.render(<ComboBox optionList={['All options', 'Open', 'Clo sed', 'Single', 'Double', 'All']}/>, document.getElementById('combo-box'));
